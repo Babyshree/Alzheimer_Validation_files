@@ -1,0 +1,38 @@
+<!-- Save this code in the templates folder as text_answer.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Answer Component</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='component_styles.css') }}"
+    />
+  </head>
+
+  <body>
+    {% include 'navbar.html' %}
+
+    <section class="component-section">
+      <div class="component-content">
+        <h2>Text Answer Component</h2>
+        <!-- Add your Text Answer component content and functionality here -->
+        <form action="{{ url_for('text_answer') }}" method="post">
+          <!-- Your text input elements go here -->
+          <button type="submit">Submit</button>
+        </form>
+        {% block content %}{% endblock %}
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Your Website. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

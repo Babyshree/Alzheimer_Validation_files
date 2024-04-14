@@ -1,0 +1,133 @@
+<!-- Save this code in the templates folder as home.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    />
+  </head>
+
+  <body>
+    {% include 'navbar.html' %}
+
+    <section class="home-section">
+      <div class="home-content">
+        <h2>Welcome to Our Alzheimer's Disease Classification</h2>
+        <!-- Video Embed -->
+        <iframe
+          width="100%"
+          height="315"
+          src="https://www.youtube.com/embed/0GXv3mHs9AU"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+
+        <p>
+          Alzheimer's disease is a progressive neurodegenerative disorder
+          characterized by the gradual decline of cognitive functions, impacting
+          memory, thinking, and behavior. It is the most common cause of
+          dementia among older adults. In the context of medical imaging,
+          particularly Flair MRI (Fluid-Attenuated Inversion Recovery) is
+          utilized to visualize brain structures and detect abnormalities. Flair
+          MRI is sensitive to fluid changes and is effective in highlighting
+          lesions, making it valuable for examining brain tissues. In
+          Alzheimer's research, Flair MRI plays a crucial role in identifying
+          structural alterations and abnormalities associated with the disease,
+          aiding in early diagnosis and understanding the progression of this
+          challenging neurological condition.
+        </p>
+        <div class="path-map">
+          <div class="path-step">
+            <img
+              src="https://img.freepik.com/free-photo/frustrated-senior-woman-hands-temples_53876-129969.jpg"
+              alt="Memory Loss Image"
+            />
+            <p>Stage 1: Mild cognitive impairment</p>
+            <p>
+              "Mild cognitive impairment (MCI) is a condition that represents a
+              subtle but noticeable decline in cognitive abilities, beyond what
+              is considered normal for a person's age. Individuals with MCI
+              experience mild memory loss and difficulties in thinking and
+              decision-making that are noticeable but not severe enough to
+              interfere significantly with daily life. It is often viewed as an
+              intermediate stage between the normal cognitive decline associated
+              with aging and more serious conditions like Alzheimer's disease.
+              Identifying and understanding MCI is crucial as it may represent
+              an early stage of neurodegenerative disorders, providing an
+              opportunity for early intervention and potential prevention of
+              further cognitive decline."
+            </p>
+          </div>
+          <div class="path-step">
+            <img
+              src="https://img.freepik.com/free-photo/stressed-business-woman-holding-head_23-2148095758.jpg?size=626&ext=jpg&ga=GA1.1.2282282.1707406046&semt=ais"
+              alt="Memory Loss Image"
+            />
+            <p>Stage 2: Very mild cognitive impairment</p>
+            <p>
+              Very mild cognitive impairment (VMCI) is a subtle decline in
+              cognitive abilities that is more noticeable than typical
+              age-related changes but does not significantly impact daily
+              functioning. Individuals with VMCI may experience minor lapses in
+              memory, attention, or other cognitive functions. This condition is
+              often considered a transitional stage between normal cognitive
+              aging and more serious cognitive disorders. It is essential to
+              identify VMCI early, as it may be an indicator of potential
+              progression to more severe cognitive impairments, such as
+              Alzheimer's disease. Monitoring and understanding VMCI can
+              facilitate early interventions and support to mitigate further
+              cognitive decline.
+            </p>
+          </div>
+          <div class="path-step">
+            <img
+              src="https://img.freepik.com/premium-photo/portrait-young-woman-looking-away_1048944-28699499.jpg?size=626&ext=jpg&ga=GA1.1.2282282.1707406046&semt=ais"
+              alt="Memory Loss Image"
+            />
+            <p>Stage 3: Moderate cognitive impairment</p>
+            <p>
+              Moderate cognitive impairment represents a more noticeable decline
+              in cognitive functions compared to mild stages but falls short of
+              severe impairment. Individuals with moderate cognitive impairment
+              often struggle with memory loss, difficulties in problem-solving,
+              and challenges in completing familiar tasks. This stage is
+              commonly associated with various neurodegenerative disorders,
+              including Alzheimer's disease. The impact on daily life becomes
+              more apparent during the moderate stage, as individuals may
+              require increased assistance and supervision. Timely recognition
+              and diagnosis are crucial at this stage to implement appropriate
+              care strategies and support for both individuals affected and
+              their caregivers.
+            </p>
+          </div>
+          <div class="path-step">
+            <img
+              src="https://img.freepik.com/premium-photo/smiling-woman-doing-garden-work-ai-generated_768802-6015.jpg?w=900"
+              alt="Memory Loss Image"
+            />
+            <p>Stage 4: Non-cognitive impairment</p>
+            <p>
+              Non-cognitive impairment refers to a condition where there is no
+              significant decline in cognitive functions. In contrast to
+              cognitive impairment, which involves difficulties in memory,
+              thinking, and decision-making, non-cognitive impairment suggests
+              that these cognitive abilities remain intact and within the
+              expected range for a person's age. It is essential to recognize
+              and differentiate non-cognitive impairment from cognitive
+              impairment, as accurate assessments contribute to appropriate care
+              and intervention strategies. Non-cognitive functions, such as
+              physical health, sensory perception, and motor skills, may still
+              be affected by various factors, highlighting the importance of a
+              comprehensive evaluation of an individual's overall well-being.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+/* Save this code in the static folder as prediction_styles.css */
+
+#side-nav {
+    background-color: #f4f4f4;
+    padding: 10px;
+    width: 200px;
+    float: left;
+}
+
+#side-nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#side-nav li {
+    margin-bottom: 10px;
+}
+
+#side-nav a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+#side-nav a:hover {
+    background-color: #ddd;
+}

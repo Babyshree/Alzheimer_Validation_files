@@ -1,0 +1,35 @@
+/* Save this code in the static folder as styles.css */
+
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    display: inline;
+    margin-right: 20px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+a:hover {
+    color: #ffcc00; /* Change color on hover, you can customize it */
+}
+
+/* Add this style to highlight the active page */
+nav a.active {
+    color: #ffcc00;
+}
